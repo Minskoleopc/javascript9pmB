@@ -1,0 +1,9 @@
+npm init  -y
+npm install cypress@9.7
+npx cypress open -----> test runner
+npx cypress run  -----> via command line
+
+// fixture --- testdata
+// integration - testcase writing 
+// plugins --- different libraries list and load
+// support  - utilities or modules
