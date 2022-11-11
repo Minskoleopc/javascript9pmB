@@ -33,9 +33,8 @@ describe('Tranverse mehtod in cypress', function () {
         .and('have.attr','type','button')
     })
 
-    
-    // Siblings
 
+    // Siblings
     // prev()
 
     it('To get the previous sibling DOM element within elements, use the .prev() command.',function(){
@@ -108,7 +107,7 @@ describe('Tranverse mehtod in cypress', function () {
         
     })
 
-    it.only('To get descendant DOM elements of the selector, use the .find() command.',function(){
+    it('To get descendant DOM elements of the selector, use the .find() command.',function(){
         cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
         cy.get('#t01')
         .find('th').should('have.length',3)
@@ -116,4 +115,46 @@ describe('Tranverse mehtod in cypress', function () {
         
     })
 
+    it.only('To get parent DOM element of elements, use the .parent() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#t01').parent().should('have.class','thumbnail')
+    })
+
+    it.only('To get the closest ancestor DOM element, use the .closest() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#t01').closest('div').should('have.class','thumbnail')
+    })
+
+    it('To get the closest ancestor DOM element, use the .closest() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').closest('div[class="container"]').should('have.class','container')
+    })
+
+    it.only('To get parents DOM element of elements, use the .parents() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').parents('div').should('have.class','container')
+    })
+
+    it.only('To get parents DOM element of elements until other element, use the .parentsUntil() command.',function(){
+        cy.visit('https://webdriveruniversity.com/Data-Table/index.html')
+        cy.get('#milk').parentsUntil('div[class="container"]').should('have.length',3)
+        //cy.get('#milk').parentsUntil('div[class="container"]')
+    })
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
 })
+
+//100 ---- it.only
+//100 ---- it.skip
