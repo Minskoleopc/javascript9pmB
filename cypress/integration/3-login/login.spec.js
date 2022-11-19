@@ -2,7 +2,6 @@
 
 // test scenario ----- what to test ?
 // test case   ------ how to test?
-
 describe('login functionality', function () {
 
     it('verify with valid credentials', function () {
@@ -36,8 +35,6 @@ describe('login functionality', function () {
         // Assertion
         // Verify dashboard  url
         cy.get('.error-button').should('be.visible')
-
-
 
     })
 

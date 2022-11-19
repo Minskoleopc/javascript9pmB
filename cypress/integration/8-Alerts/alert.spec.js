@@ -1,5 +1,6 @@
 /// <reference types="cypress" />
 describe('verify the js alerts',function(){
+
     beforeEach(function(){
         cy.visit('https://the-internet.herokuapp.com/javascript_alerts')
     })
@@ -63,15 +64,6 @@ describe('verify the js alerts',function(){
         })
         cy.get('#result').should('have.text','You clicked: Cancel')
     })
-
-
-    
-
-
-
-
-
-
 
 })
 

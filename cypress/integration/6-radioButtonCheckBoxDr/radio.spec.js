@@ -7,7 +7,6 @@ describe('verify radio button , check box , dropdown , enabled ,disabled', funct
     })
 
     it('verify the functionality for radio', function () {
-
         // check()
         // cy.get('input[value="green"]').check().should('be.checked')
         // cy.get('input[value="blue"]').should('not.be.checked')

@@ -34,7 +34,6 @@ describe('verify the contact us form ',function(){
 
     it('verify the contactus for reset functionality',function(){
 
-        cy.get('input[name="first_name"]').type('chinmay')
         cy.get('input[name="last_name"]').type('deshpande')
         cy.get('input[name="email"]').type('chinmay.deshpande@gmail.com')
         cy.get('textarea[name="message"]').type('Learning js')

@@ -2,8 +2,6 @@
 
 describe('verif the table fucnctionality',function(){
 
-
-
     function verifyTable(id , expected){
         let sum = 0
         cy.visit('http://www.webdriveruniversity.com/Data-Table/index.html')
@@ -17,10 +15,6 @@ describe('verif the table fucnctionality',function(){
         })
         
     }
-
-
-
-
 
     it('verify the sum of age in table',function(){
         // let sum = 0
