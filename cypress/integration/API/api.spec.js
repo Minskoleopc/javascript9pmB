@@ -52,3 +52,7 @@ describe('verify the user APIs',function(){
     })
 
 })
+//hit api in postman
+//https://reqres.in/
+//then move to cypress ---- cy.request()
+//https://www.postman.com/downloads/

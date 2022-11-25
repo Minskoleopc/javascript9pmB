@@ -61,3 +61,5 @@ describe('verify the user per page', function () {
     })
 
 })
+
+// python , excel , sql , tableau , javascript , salesforce - javascript

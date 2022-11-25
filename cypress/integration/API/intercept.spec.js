@@ -39,7 +39,6 @@ describe('verify the  get  post and update comment', function () {
             expect(request['method']).to.eq('GET')
             expect(request.headers.host).to.eqls("jsonplaceholder.cypress.io")
 
-
         })
         cy.get('.network-comment').should('contain', 'laudantium')
     })
